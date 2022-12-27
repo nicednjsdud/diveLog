@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DivelogApplication {
+public class DiveLogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DivelogApplication.class, args);
+		SpringApplication.run(DiveLogApplication.class, args);
 	}
 
 }
