@@ -36,26 +36,12 @@ spring:
   profiles:
     active:
       -local
+    group:
+        local: "site-local,db-local"
+        dev: "site-dev"
     include:
       -db
-      -my-service
-  config:
-    activate:
-      on-profile: "local"
-
-  jpa:
-    show-sql: true
-    database-platform: H2
-    hibernate:
-      ddl-auto: create-drop
-
-  datasource:
-    hikari:
-      driver-class-name: org.h2.Driver
-      jdbc-url: jdbc:h2:mem://localhost/~/divelog;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
-      username: sa
-      password:
-
+      -site
 ---
 spring:
   config:
