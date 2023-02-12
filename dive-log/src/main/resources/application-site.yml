@@ -1,0 +1,23 @@
+site:
+  author-name: bob
+  author-email: nicednjsdud@gmail.com
+  
+---
+spring:
+  config:
+    activate:
+      on-profile: "site-local"
+      
+site:
+  author-name: bob-local
+  author-email: nicednjsdud.local@gmail.com
+  
+---
+spring:
+  config:
+    activate:
+      on-profile: "site-dev"
+      
+site:
+  author-name: bob
+  author-email: nicednjsdud.dev@gmail.com

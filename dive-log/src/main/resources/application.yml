@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active:
+    - local
+    group:
+      local: "site-local,db-local,my-service"
+      dev: "site-dev"
+    include:
+    - db
+    - site
+    - my-service
